@@ -7,26 +7,24 @@
 
 ########## Variables
 
-dir=~/dotfiles			# dotfiles directory
-olddir=~/dotfiles_old		# old dotfiles backup directory
-files="vimrc vim zshrc"		# list of files/folders to symlink in homedir
+dir=~/dotfiles          # dotfiles directory
+olddir=~/dotfiles_old   # old dotfiles backup directory
+files="zshrc" # list of files/folders to symlink in homedir
 
 ##########
 
 # create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -p $olddir
-echo "...done"
+printf "Creating %s for backup of any existing dotfiles in ~" "$olddir"
+mkdir -p $olddir && printf "...done\n"
 
 # change to the dotfiles directory
-echo "Changing to the $dir directory"
-cd $dir
-echo "...done"
+printf "Changing to the %s directory" "$dir"
+cd $dir && printf "...done\n"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+# move any existing dotfiles in homedir to dotfiles_old directory,
+# then create symlinks
+printf "Moving any existing dotfiles from ~ to %s\n" "$olddir"
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$files ~/dotfiles_old/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    mv ~/.$file ~/dotfiles_old/ && printf "Moved ~/.%s to ~/dotfiles_old\n" "$file"
+    ln -s $dir/$file ~/.$file && printf "Linked ~/.%s to %s/%s\n" "$file" "$dir" "$file"
 done
