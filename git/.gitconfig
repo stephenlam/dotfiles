@@ -1,0 +1,6 @@
+[user]
+	name = Stephen Lam
+	email = stephenzlam@gmail.com
+[core]
+	editor = nvim
+	autocrlf = input
