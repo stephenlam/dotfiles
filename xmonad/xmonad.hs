@@ -10,7 +10,6 @@ main = xmonad $ defaultConfig
     { terminal = "konsole"
     , layoutHook = myLayoutHook
     , handleEventHook = myEventHook
-    , startupHook = myStartupHook
     , borderWidth = 2
     , normalBorderColor = caveGray06
     , focusedBorderColor = caveViolet
@@ -20,5 +19,3 @@ myLayoutHook = avoidStruts . smartBorders $ layoutHook defaultConfig
 
 myEventHook = screenCornerEventHook
 
-myStartupHook = do
-    addScreenCorner SCLowerLeft
