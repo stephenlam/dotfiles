@@ -11,6 +11,8 @@ ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/xmonad/" ~/.xmonad
+
+mkdir -p ~/.config
 ln -sfv "$DOTFILES_DIR/konsole/konsolerc" ~/.config/konsolerc
 
 mkdir -p ~/.local/share/konsole
