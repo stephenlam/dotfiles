@@ -11,3 +11,6 @@ ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/xmonad/" ~/.xmonad
+ln -sfv "$DOTFILES_DIR/konsole/konsolerc" ~/.config/konsolerc
+ln -sfv "$DOTFILES_DIR/konsole/base16-ateliercave-light.colorscheme" ~/.local/share/konsole/base16-ateliercave-light.colorscheme
+ln -sfv "$DOTFILES_DIR/konsole/CodingCave.profile" ~/.local/share/konsole/CodingCave.profile

@@ -1,0 +1,22 @@
+[Desktop Entry]
+DefaultProfile=CodingCave.profile
+
+[Favorite Profiles]
+Favorites=
+
+[FileLocation]
+scrollbackUseCacheLocation=true
+scrollbackUseSystemLocation=false
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+Height 975=975
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPPAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1920
+
+[TabBar]
+TabBarVisibility=AlwaysHideTabBar

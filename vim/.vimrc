@@ -35,7 +35,6 @@ set incsearch
 
 " Don't redraw while executing macros (performance)
 set lazyredraw 
-set ttyfast
 
 " For regular expressions turn magic on
 set magic
@@ -47,7 +46,6 @@ set mat=2    " blink 2/10 seconds
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
-set t_vb=
 set tm=500
 
 " Add a bit extra margin to the left
@@ -80,7 +78,7 @@ let g:ctrlp_cmd = 'CtrlP'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable 
 set background=light
-colorscheme base16-ateliercave
+colorscheme Atelier_Cave
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
