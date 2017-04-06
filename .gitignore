@@ -1,0 +1,5 @@
+# xmonad build files
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad.o
+xmonad/xmonad.state

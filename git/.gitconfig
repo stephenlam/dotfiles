@@ -1,6 +1,10 @@
 [user]
 	name = Stephen Lam
 	email = stephenzlam@gmail.com
+	signingkey = 6C6CFAF993D88F85
 [core]
 	editor = nvim
 	autocrlf = input
+
+[gpg]
+	program = /run/current-system/sw/bin/gpg2
