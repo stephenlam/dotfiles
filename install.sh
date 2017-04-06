@@ -12,6 +12,11 @@ ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/xmonad/" ~/.xmonad
+ln -sfv "$DOTFILES_DIR/mpv" ~/.config/mpv
+ln -sfv "$DOTFILES_DIR/x11/.xprofile" ~
+
+# Copy wallpaper into place
+cp --verbose "$DOTFILES_DIR/x11/wallpaper.jpg" ~
 
 mkdir -p ~/.config
 ln -sfv "$DOTFILES_DIR/konsole/konsolerc" ~/.config/konsolerc
