@@ -8,11 +8,13 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Create symlinks
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
+ln -sfv "$DOTFILES_DIR/emacs/.emacs" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/xmonad/" ~/.xmonad
-ln -sfv "$DOTFILES_DIR/mpv" ~/.config/mpv
-ln -sfv "$DOTFILES_DIR/x11/.xprofile" ~
+#ln -sfv "$DOTFILES_DIR/mpv" ~/.config/mpv
+#ln -sfv "$DOTFILES_DIR/x11/.xprofile" ~
+
 
 # Copy wallpaper into place
 cp --verbose "$DOTFILES_DIR/x11/wallpaper.jpg" ~
